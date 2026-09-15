@@ -23,6 +23,8 @@ let state;
 // object
 
 console.log(typeof "Sadi");
+console.log(typeof ("Sadi")); // same work
+
 console.log(typeof null); //object
 console.log(typeof undefined); //undifined
 
