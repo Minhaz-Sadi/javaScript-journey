@@ -28,3 +28,29 @@ console.log(typeof ("Sadi")); // same work
 console.log(typeof null); //object
 console.log(typeof undefined); //undifined
 
+
+
+// primitive
+// 7 types: String, Number, Boolean, null, undefined, Symbol, BigInt
+
+// const id = Symbol('123');
+// console.log(id);
+
+// Reference (Non primitive)
+// Array, Objects, Functions 
+
+const heros = ["A", "B", "C"];
+let obj = {
+    name: "Sadi",
+    age:22
+}
+
+const myFunction = function(){
+    console.log("Hello World!");
+}
+
+
+
+
+// ===============
+// Stack(Primitive), Heap(Non-Primitive)
