@@ -40,8 +40,43 @@ function loginMsg(userName){
     }
     return `${userName} just logged in`;
 }
-console.log(loginMsg("Sadi"));
-console.log(loginMsg(""));
-console.log(loginMsg()); // undifined
+// console.log(loginMsg("Sadi"));
+// console.log(loginMsg(""));
+// console.log(loginMsg()); // undifined
+
+
+function calCartPrice(...num1){ // rest operator(...)
+    return num1;
+}
+// console.log(calCartPrice(2, 4, 7, 500));
+
+function calCartPrice2(val1, val2, ...num1){
+    return num1;
+}
+// console.log(calCartPrice2(200, 400, 5000, 23000));
+
+const user = {
+    username: "Sadi",
+    price : 200
+}
+
+function handleObject(anyobject){
+    console.log(`user name is ${anyobject.username} and price is ${anyobject.price}`);
+}
+// handleObject(user);
+handleObject({
+    username: "Sam",
+    price: 999
+});
+
+// arrays
+const myNewArray = [100, 200, 300, 1000];
+
+function returnSecVal(getArray){
+    return getArray[1];
+}
+// console.log(returnSecVal(myNewArray));
+console.log(returnSecVal([2000,1,200]));
+
 
 // node basicJS-p3/01_function.js
