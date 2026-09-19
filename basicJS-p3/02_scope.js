@@ -52,7 +52,7 @@ function addOne(num){
 
 
 
-addTwo(7); // not use on upper for this type
+// addTwo(7); // not use on upper for this type
 const addTwo = function(num){
     return num + 2;
 }
