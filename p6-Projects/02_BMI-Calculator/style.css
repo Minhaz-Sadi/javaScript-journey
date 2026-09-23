@@ -1,0 +1,107 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: white;
+}
+
+
+/* Main container */
+
+.container {
+    width: 400px;
+    min-height: 505px;
+
+    margin: 10px auto;
+
+    padding: 20px;
+
+    background-color: #707070;
+}
+
+/* Heading */
+
+.container h1 {
+    font-size: 20px;
+    margin-bottom: 35px;
+}
+
+/* Form */
+
+form p {
+    margin-bottom: 30px;
+
+    display: flex;
+    align-items: center;
+}
+
+form label {
+    width: 120px;
+    font-size: 16px;
+}
+
+form input {
+    width: 108px;
+    height: 30px;
+
+    border: 1px solid #999;
+}
+
+/* Calculate button */
+
+button {
+    display: block;
+
+    margin: 0 auto;
+
+    padding: 2px 20px;
+
+    font-size: 17px;
+
+    background-color: #fff;
+
+    border: 2px solid #555;
+    border-radius: 6px;
+
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #eee;
+}
+
+/* Result */
+
+#results {
+    margin-top: 15px;
+
+    text-align: center;
+
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* BMI guide */
+
+#weight-guide {
+    margin-top: 18px;
+    margin-left: 30px;
+}
+
+#weight-guide h3 {
+    text-align: center;
+
+    margin-bottom: 12px;
+
+    font-size: 16px;
+}
+
+#weight-guide p {
+    margin-bottom: 14px;
+
+    font-size: 13px;
+}
