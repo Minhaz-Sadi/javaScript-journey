@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Events</title>
+</head>
+<body style="color: aliceblue; background-color: #414141;">
+    <h2>Amazing image</h2>
+    <div>
+        <ul id="images">
+            <li><img width="200px" id="photoshop" src="https://images.presentationgo.com/2025/04/developer-coding-desk.jpg"></li>
+            <li><img width="200px" id="japan" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRJ6fqG3xzPRK4rGYm6At56ZiDG8I3hwbpNH6xS3VaB17CCDRk2IDEVljrl&s=10"></li>
+            <li><img width="200px" id="owl" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRaI7ZdPfXsf-dKcGB9K3woQmIliiAzeFmYin06eO-p2Tw1VZrsf89QeyEW&s=10" ></li>
+            <li><a style="color: aliceblue;" href="https://google.com" id="google">google</a></li>
+        </ul>
+    </div>
+</body>
+
+<script>
+    // document.getElementById('owl').onclick = function(){
+    //     alert('owl onclik');
+    // }
+
+    // attachEvent()
+    // jQuery - on
+    
+    // type, timestamp, defaultPrevented
+    // target, toElement, srcElement, currentTarget
+    // clientX, clientY, screenX, scrrenY
+    // altkey, ctrkey, shiftkey, keycode
+
+    // document.getElementById('owl').addEventListener('click',function(){
+    //     alert("owl click again");
+    // }, false); // default false
+
+    
+    //  document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("click inside ul");
+        
+    // }, false);
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //    console.log("owl click");
+    //    e.stopPropagation();
+        
+    // }, false);
+
+
+    // document.getElementById('google').addEventListener('click', function(e){
+
+    //     e.preventDefault();
+    //     e.stopPropagation
+    //     console.log("google click");
+        
+
+    // }, false);
+
+
+    document.querySelector('#images').addEventListener('click', function(e){
+        console.log(e.target.tagName);
+
+        if (e.target.tagName == 'IMG') {
+            console.log(e.target.id);
+            
+            let removeIt = e.target.parentNode;
+            removeIt.remove();
+        }
+        
+        // removeIt.parentNode.removeChild(removeIt);
+    });
+    
+
+
+
+</script>
+</html>
